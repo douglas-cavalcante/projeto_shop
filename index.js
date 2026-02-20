@@ -28,7 +28,7 @@ function realizarLogin() {
 
   if (email === "senai@gmail.com" && senha === "senai") {
     /* Usamos 3 sinais de === para comparar tanto o valor quanto o tipo da informacao */
-    window.location.href = "./home.html";
+    window.location.href = "./pages/home/home.html";
   } else {
     alert("Crendeciais incorreta");
   }
