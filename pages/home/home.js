@@ -89,5 +89,5 @@ produtos.forEach((meuItem) => {
 
   document
     .getElementById("lista")
-    .insertAdjacentHTML("afterbegin", meuProdutoHTML);
+    .insertAdjacentHTML("beforeend", meuProdutoHTML);
 });
