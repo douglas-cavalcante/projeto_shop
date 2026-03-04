@@ -1,0 +1,25 @@
+function carregarMenu() {
+  document.body.insertAdjacentHTML(
+    "afterbegin",
+    `
+     <div class="menu">
+      <h1 class="logo_name">GeekShop</h1>
+
+      <div class="container_direita_menu">
+        <ul>
+          <li>Produtos</li>
+          <li>Sobre</li>
+          <li>Contato</li>
+         
+        </ul>
+
+        <div class="carrinho_icone_container">
+          <img src="../../imagens/cart.svg" />
+        </div>
+      </div>
+    </div>
+    `,
+  );
+}
+
+carregarMenu();
