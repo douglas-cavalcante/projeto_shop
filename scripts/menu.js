@@ -10,7 +10,6 @@ function carregarMenu() {
           <li>Produtos</li>
           <li>Sobre</li>
           <li>Contato</li>
-         
         </ul>
 
         <div class="carrinho_icone_container">
