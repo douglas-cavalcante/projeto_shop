@@ -8,10 +8,68 @@
     <link rel="stylesheet" href="../../styles/reset.css" />
     <link rel="stylesheet" href="../../styles/principal.css" />
 
-    <style></style>
+    <style>
+      .container_form {
+        width: 60%;
+        background-color: #f5f5f5;
+        margin: 40px auto;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .elemento_form {
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
+    <form class="container_form" id="form_produto">
+      <h1>Cadastro de produto</h1>
+
+      <label for="input_nome">Nome do produto</label>
+      <input
+        placeholder="Ex: Mago negro"
+        id="input_nome"
+        class="elemento_form"
+      />
+
+      <label for="select_raridade">Raridade</label>
+      <select id="select_raridade" class="elemento_form">
+        <option value="">Selecione uma raridade</option>
+        <option value="Comum">Comum</option>
+        <option value="Raro">Raro</option>
+        <option value="Ultra raro">Ultra raro</option>
+      </select>
+
+      <label for="input_preco"> Preco (R$) </label>
+      <input
+        type="number"
+        placeholder="R$ 0,00"
+        id="input_preco"
+        class="elemento_form"
+      />
+
+      <label for="textarea_descricao">Descricao</label>
+      <textarea id="textarea_descricao" class="elemento_form"></textarea>
+
+      <label for="input_imagem">Url da imagem</label>
+      <input type="url" id="input_imagem" class="elemento_form" />
+
+      <button type="submit">Cadastrar</button>
+      <button>Limpar</button>
+    </form>
+
     <script src="./meu_script.js"></script>
     <script src="../../scripts/menu.js"></script>
+    <script src="cadastro.js"></script>
   </body>
 </html>
